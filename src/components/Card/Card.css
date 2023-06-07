@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-white {
+    border: none !important;
+
+}
+
+.card-img {
+    width: 51px;
+    height: 51px;
+    transform: translate(-18px, -5px);
+
+}
+
+.card .card-h3 {
+    font-size: 38px;
+    transform: translate(-65px, 0px);
+}
+
+.card-p {
+    font-size: 15px;
+    text-align: justify;
+    padding-right: 47px !important;
+}

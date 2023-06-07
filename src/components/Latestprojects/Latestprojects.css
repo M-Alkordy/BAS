@@ -1,0 +1,366 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.latestprojects {
+    max-width: 100vw !important;
+    height: 1004px !important;
+    margin-top: 529px;
+    position: relative;
+}
+
+.latestprojects h1 {
+    transform: translate(0px, 24px);
+    font-size: 61px;
+    font-weight: bolder;
+}
+
+.latestprojects .latest {
+
+    transform: translate(0px, -21px);
+    font-size: 23px;
+    padding-right: 175px !important;
+    padding-left: 182px;
+
+}
+
+.latestprojects .focalx {
+    background-color: #1c1b1f !important;
+    margin-top: -9px;
+    margin-left: -12px !important;
+    max-height: 649px !important;
+    position: relative;
+    width: 57.906vw;
+}
+
+.latestprojects .focalx h1 {
+    color: #1c1b1f;
+    font-size: 50px;
+    font-weight: bold;
+    transform: translate(71px, 34px);
+    z-index: 100000;
+    position: absolute;
+}
+
+.latestprojects .focalx .services {
+    color: #1c1b1f;
+    font-size: 17px;
+    transform: translate(74px, 97px);
+    z-index: 100000;
+    position: absolute;
+}
+
+.latestprojects .focalx .title-img {
+    width: 722px;
+    top: -5px;
+    left: 15px;
+    transform: translate(-60px, 0px);
+}
+
+.latestprojects .focalx .p2 {
+    color: #fffbfe !important;
+    font-size: 21px !important;
+    text-align: justify;
+    padding-right: 148px !important;
+    padding-left: 71px !important;
+    padding-top: 35px !important;
+}
+
+.latestprojects .focalx .name {
+    color: #fffbfe;
+    padding-top: 78px !important;
+    transform: translate(-271px, -10px);
+}
+
+.latestprojects .focalx .name .focalx-img {
+    display: none;
+}
+
+
+.latestprojects .focalx .name-alaa {
+    color: #fffbfe;
+}
+
+.latestprojects .readmore {
+    transform: translate(189px, -75px);
+    font-size: 14px;
+}
+
+.readmore a {
+    text-decoration: none;
+    border-bottom: 2px solid #fffbfe;
+    padding-bottom: 5px;
+    color: #fffbfe !important;
+}
+
+.latestprojects .view-btn {
+    display: none;
+}
+
+.latestprojects .readmore .slider-right .right-img {
+    padding-left: 8px;
+    width: 27px;
+}
+
+.latestprojects .slider-right {
+    transform: translate(76px, 134px);
+    width: 419px;
+}
+
+.latestprojects .slick-dots {
+    display: block !important;
+    transform: translate(4px, 6px) !important;
+}
+
+.latestprojects .slick-prev {
+    left: -25px;
+    display: none !important;
+}
+
+.latestprojects .slick-next {
+    /* left: -25px; */
+    display: none !important;
+}
+
+.latestprojects .slider-right .slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #2a1bb8 !important;
+}
+
+.latestprojects .slider-right .slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 12px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: gray
+}
+
+
+/* responsive */
+@media screen and (min-width: 350px) and (max-width : 667px) {
+    .latestprojects {
+        margin-top: 348px;
+        height: 772px !important;
+    }
+
+    .latestprojects h1 {
+        transform: translate(-178px, -19px);
+        width: 207%;
+        font-size: 30px;
+    }
+
+    .latestprojects .latest {
+        width: 295%;
+        transform: translate(-325px, -73px);
+        font-size: 14px;
+    }
+
+    .latestprojects .focalx {
+        margin-top: -114px;
+        margin-left: -12px !important;
+        height: 471px !important;
+        position: relative;
+        width: 100vw;
+    }
+
+    .latestprojects .focalx .title-img {
+        width: 406px !important;
+        top: -5px;
+        left: 15px;
+        transform: translate(-101px, 0px);
+    }
+
+    .latestprojects .focalx h1 {
+        font-size: 25px;
+        transform: translate(-69.4871vw, 24px);
+    }
+
+    .latestprojects .focalx .services {
+        font-size: 11px;
+        transform: translate(37px, 55px);
+    }
+
+    .latestprojects .focalx .p2 {
+        font-size: 14px !important;
+        padding-right: 34px !important;
+        padding-left: 39px !important;
+        padding-top: 19px !important;
+    }
+
+    .latestprojects .focalx .name .focalx-img {
+        display: block;
+        width: 51px !important;
+        transform: translate(294px, -37px);
+    }
+
+    .latestprojects .focalx .name .name-alaa {
+        color: #fffbfe;
+        transform: translate(220px, -73px);
+        font-size: 15px;
+
+    }
+
+    .latestprojects .readmore {
+        transform: translate(107px, -140px);
+        font-size: 13px;
+    }
+    .latestprojects .right-img{
+    padding-left: -5px;
+    width: 19px;
+    }
+
+    .latestprojects .slider-right {
+        display: none;
+    }
+
+    .latestprojects .view-btn {
+        display: block;
+        background: #1c1b1f;
+        margin-top: 31px;
+        color: #fffbfe;
+        width: 201px;
+        margin-left: 69px;
+    }
+
+}
+
+@media screen and (min-width: 668px) and (max-width : 1366px) {
+     .latestprojects h1 {
+        transform: translate(433px, 81px);
+        width: 41%;
+        font-size: 74px;
+    }
+
+    .latestprojects .latest {
+        transform: translate(28px, 24px);
+        font-size: 35px;
+    } 
+
+    .latestprojects .focalx {
+        margin-top: 20px;
+        margin-left: -12px !important;
+        height: 634px !important;
+        position: relative;
+        width: 64vw !important;
+    }
+
+    .latestprojects .focalx .title-img {
+        width: 750px;
+        top: -5px;
+        left: 15px;
+        transform: translate(-101px, 0px);
+    }
+
+    .latestprojects .focalx h1 {
+        font-size: 35px;
+        transform: translate(23px, 50px);
+    }
+
+    .latestprojects .focalx .services {
+        font-size: 25px;
+        transform: translate(69px, 97px);
+    }
+
+    .latestprojects .focalx .p2 {
+        font-size: 24px !important;
+        padding-right: 119px !important;
+        padding-left: 56px !important;
+        padding-top: 25px !important;
+        transform: translate(10px, 10px);
+    
+    }
+
+    .latestprojects {
+        margin-top: 602px;
+        height: 1075px !important;
+    }
+.latestprojects .slider-right{
+    transform: translate(121px, 155px);
+}
+}
+
+
+@media screen and (min-width: 1367px) and (max-width : 1920px) {
+    .latestprojects h1 {
+        transform: translate(0px, 114px);
+        font-size: 61px;
+        font-weight: bolder;
+    }
+    .latestprojects .focalx .title-img {
+        width: 750px;
+        top: -5px;
+        left: 15px;
+        transform: translate(-181px, 0px);
+    }
+    .latestprojects .latest {
+        transform: translate(0px, 67px);
+        font-size: 23px;
+        padding-right: 175px !important;
+        padding-left: 182px;
+    }
+    .latestprojects .slider-right {
+        transform: translate(76px, 194px);
+        width: 419px;
+    }
+    .latestprojects .focalx {
+        background-color: #1c1b1f !important;
+        margin-top: 82px;
+        margin-left: -12px !important;
+        max-height: 649px !important;
+        position: relative;
+        width: 57.906vw;
+    }
+    .latestprojects .focalx h1 {
+        font-size: 35px;
+        transform: translate(92px, 50px);
+    }
+
+    .latestprojects .focalx .services {
+        font-size: 25px;
+        transform: translate(92px, 97px);
+    }
+
+    .latestprojects .focalx .p2 {
+        font-size: 28px !important;
+        padding-right: 161px !important;
+        padding-left: 79px !important;
+        padding-top: 24px !important;
+        transform: translate(10px, 10px);
+    } 
+    /* .latestprojects .focalx .title-img {
+        width: 846px;
+        top: -5px;
+        left: 15px;
+        transform: translate(-195px, 0px);
+    } 
+    .latestprojects .focalx .p2 {
+        color: #fffbfe !important;
+        font-size: 26px !important;
+        text-align: justify;
+        padding-right: 148px !important;
+        padding-left: 71px !important;
+        padding-top: 35px !important;
+    } */
+    .latestprojects .focalx .name {
+        color: #fffbfe;
+        padding-top: 78px !important;
+        transform: translate(-258px, -27px);
+        font-size: 23px;
+    }
+    .latestprojects .readmore {
+        transform: translate(335px, -94px);
+        font-size: 17px;
+    }
+}
