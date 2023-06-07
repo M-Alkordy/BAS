@@ -121,7 +121,7 @@
     }
     .container-white .card-white {
         border: none !important;
-        transform: translate(262px, 285px);
+        transform: translate(262px, 235px);
         width: 60.02%;
         height: 313px;
         margin-bottom: 26px;
@@ -146,7 +146,13 @@
 }
 @media screen and (min-width: 1367px) and (max-width : 1920px) {
     .container-white {
-        margin: -1381px 0 0 0 !important;
+        margin: -1454px 0 0 0 !important;
+    }
+    .container-white h1 {
+        color: #fffbfe !important;
+        transform: translate(-16px, 285px);
+        font-size: 61px !important;
+        font-weight: bolder;
     }
     .container-white .card-white {
         border: none !important;

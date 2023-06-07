@@ -75,7 +75,7 @@
     }
 
     .faq .title-p {
-        transform: translate(-376px, -81px);
+        transform: translate(0px, -40px);
         font-size: 15px;
         padding-right: 278px !important;
         padding-left: 389px;
@@ -83,7 +83,7 @@
     }
 
     .container-faqs {
-        margin-left: -3px;
+        margin-left: 6px;
         margin-top: -121px;
         width: 97% !important;
     }

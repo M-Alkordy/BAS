@@ -66,6 +66,11 @@
         padding: 0px;
         margin: 10px;
     }
+    .container-customers .company {
+    transform: translate(802px, 37px);
+    width: 120px;
+    color: #2a1bbf;
+}
     .container-customers .slider-customers img{
         width: 80px;
         margin-left: 100px;
@@ -146,7 +151,7 @@
     }
     .container-customers .slider-customers .slick-list {
         margin: 0px 0px 0px 0px !important;
-        width: 2500px !important;
+        width: 336px !important;
     }
     .container-customers .Our-costomer-desc{
         font-size: 12px;
