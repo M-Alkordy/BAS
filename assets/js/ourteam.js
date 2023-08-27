@@ -46,11 +46,11 @@ ourTeamSlider.addEventListener("touchmove" , (e) => {
 })
 
 
-const playOnTouch = (i) => {
+const playOnTouch = (counter) => {
     if (counter > 3) {
-        return false
+        counter = 3 ;
     } else if (counter < 0){
-        return false
+        counter = 0 ;
     } 
     myIndeicatore[counter].click()
 }
