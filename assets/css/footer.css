@@ -1,0 +1,174 @@
+footer {
+    background-color: var(--black);
+    padding: 4.8rem 0 0;
+    position: relative;
+}
+footer .JI_container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4.8rem;
+} 
+footer .JI_container .JI_footer_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .JI_container .JI_footer_box_logo {
+    margin-bottom: .8rem;
+}
+
+footer .JI_footer_box_subtitle {
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 141.4%;
+    text-transform: capitalize;
+    margin-bottom: 1.6rem;
+}
+footer .JI_footer_socials {
+    display: inline-flex;
+    gap: 1.6rem;
+
+}
+footer .JI_footer_icon {
+    cursor: pointer;
+    transition: all var(--main-delay);
+}
+footer .JI_footer_icon:hover {
+    opacity: .8;
+}
+footer .JI_footer_box_title {
+    color: var(--white);
+    font-size: 3.1rem;
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: .8rem; 
+    text-transform: uppercase;
+}
+
+footer .JI_footer_form {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    position: relative;
+}
+footer .JI_footer_form .JI_footer_form_mail_icon {
+    position: absolute;
+    right: 0;
+}
+
+footer .JI_footer_box_email_input,
+footer .JI_footer_box_email_input::placeholder {
+    border: none;
+    border-bottom: 1px solid var(--indicators-color);
+    background-color: var(--black);
+    padding-bottom: 1.6rem;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    caret-color: #fff;
+    width: 23.792vw;
+    min-width: 260px;
+}
+
+footer .JI_footer_box_email_input:focus {
+    outline: none;
+}
+
+footer .JI_footer_box_submit {
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 131%;
+    letter-spacing: -0.48px;
+    background-color: var(--black);
+    border: 2px solid var(--white);
+    border-radius: 4px;
+    width: 20.1rem;
+    padding: .8rem 3.2rem;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+footer .JI_footer_box.second .JI_footer_box_subtitle {
+    margin-bottom: 3.2rem;
+}
+
+footer .JI_footer_box_for_more {
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 400;
+}
+footer .JI_footer_box_for_more:first-of-type {
+    margin-bottom: 1.6rem;
+}
+footer .JI_footer_end {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-top: 1px solid rgb(210 210 210 / 20%);
+}
+footer .JI_footer_end_img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+footer .JI_footer_end_img_large {
+    display: block;
+}
+footer .JI_footer_end_img_mobile {
+    display: none;
+}
+footer .JI_footer_end_p {
+    color: #FFF;
+    font-size: 1.3rem;
+    line-height: 141.4%;
+    padding: 5.3rem 5%;
+}
+@media (max-width : 992px) {
+    footer .JI_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 6.4rem;
+    } 
+    footer .JI_footer_box.first {
+        order: 2;
+    }
+    footer .JI_footer_box.second {
+        order: 0;
+    }
+    footer .JI_footer_box.third {
+        order: 1;
+    }
+    footer .JI_footer_box_title {
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: normal;
+    }
+    footer .JI_footer_box_subtitle {
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: normal;
+    }
+    footer .JI_footer_icon {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+    footer .JI_footer_end {
+        justify-content: center;
+    }
+    footer .JI_footer_end_img_large {
+        display: none;
+    }
+    footer .JI_footer_end_img_mobile {
+        display: block;
+    } 
+    footer .JI_footer_end_p {
+        padding: 4.3rem 5%;
+    }
+    footer .JI_footer_box_for_more {
+        font-size: 1.4rem;
+    }
+}

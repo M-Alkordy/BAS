@@ -1,0 +1,133 @@
+.JI_contact .JI_main_title {
+    margin-top: 0;
+}
+.JI_contact .JI_contact_form {
+    width : 45.754%;
+    padding: 4.8rem 8rem;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    margin: 6.8rem auto 9.6rem;
+}
+.JI_contact .JI_contact_info {
+    display: flex;
+    flex-direction: column;
+}
+.JI_contact .JI_contact_label {
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 131%;
+    letter-spacing: -0.48px;
+    margin-bottom: .8rem;
+}
+.JI_contact .JI_contact_input ,
+.JI_contact .JI_contact_input::placeholder {
+    color: var(--light-grey);
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 141.4%;
+    background-color: var(--black);
+    caret-color: var(--light-grey);
+}
+.JI_contact .JI_contact_form_accordion_head {
+    color: var(--light-grey);
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 141.4%;
+    border-bottom: 1px solid var(--dark-grey);
+    padding-bottom: .8rem;
+}
+.JI_contact .JI_contact_input {
+    padding-bottom: .8rem;
+    border: none;
+    border-bottom: 1px solid var(--dark-grey);
+}
+.JI_contact .JI_contact_input:focus {
+    outline: none;
+}
+.JI_contact .JI_contact_form_accordion_head {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.JI_contact .JI_contact_form_accordion_head::after {
+    position: absolute;
+    content: "\002B";
+    right: 0;
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: var(--white);
+    transition: all var(--main-delay);
+}
+.JI_contact .JI_contact_form_accordion_head.active::after {
+    transform: rotate(45deg);
+}
+.JI_contact .JI_contact_form_accordion_desc {
+    max-height: 0;
+    overflow: hidden;
+    background-color: var(--dark-grey);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    transition: all var(--main-delay) ease-in-out;
+}
+
+.JI_contact .JI_contact_form_accordion_desc_p {
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 131%;
+    letter-spacing: -0.48px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    padding: .8rem 6.4rem;
+    transition: all var(--main-delay);
+}
+.JI_contact .JI_contact_form_accordion_desc_p:hover {
+    background-color: var(--white2);
+    color: var(--black);
+}
+.JI_contact .JI_contact_info_submit {
+    border-radius: .4rem;
+    background: var(--white);
+    padding: 1.5rem 5rem;
+    margin:  1.6rem auto 0;
+    color: var(--dark-black);
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: -0.48px;
+    width: 21.3rem;
+    height: 5.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+    .JI_contact .JI_contact_form {
+        width : 90%;
+        padding: 3.6rem 3rem;
+        gap: 1.6rem;
+        margin: 2.4rem auto 8rem;
+    }
+    .JI_contact .JI_contact_input ,
+    .JI_contact .JI_contact_input::placeholder ,
+    .JI_contact .JI_contact_form_accordion_head {
+        font-weight: 300;
+        line-height: normal;
+        font-size: 1.2rem;
+    }
+    .JI_contact .JI_contact_form_accordion_head::after {
+        font-size: 2.4rem;
+    }
+    .JI_contact .JI_contact_info_submit {
+        margin-top: 2.8rem;
+        width: 20rem;
+        height: 4.3539rem;
+    }
+}
