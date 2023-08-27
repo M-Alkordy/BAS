@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* start home page */
+
+/* end home page */
+
+@media screen and (max-width:992px) {
+    /* start home page */
+
+    /* end home page */
+}
