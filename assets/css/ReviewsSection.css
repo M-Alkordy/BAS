@@ -24,29 +24,21 @@
     gap: 3.2rem;
     padding: 3.8rem 0 0;
     flex-shrink: 0;
-    transition: all 1s;
+    transition: all calc(var(--main-delay)*2);
     position: absolute;
     cursor: pointer;
 }
 .JI_reviews .JI_reviews_slider .JI_reviews_slider_card.active {
     transform: scale(1);
-    left: auto;
-    right: auto;
     opacity: 1;
 }
 .JI_reviews .JI_reviews_slider .JI_reviews_slider_card.next_card {
-    right: -40%;
-    left: auto;
-    transform: scale(0.8);
-    opacity: 0.5;
+    transform: scale(0.8) translateX(130%);
+    opacity: 0.3;
 }
 .JI_reviews .JI_reviews_slider .JI_reviews_slider_card.prev_card {
-    /* transition: all 1s; */
-    opacity: 0.5;
-    left: -40%;
-    right: auto;
-    transform: scale(0.8);
-
+    opacity: 0.3;
+    transform: scale(0.8) translateX(-130%);
 }
 
 .JI_reviews .JI_reviews_slider .JI_reviews_slider_card_head_info {
@@ -139,15 +131,3 @@
         line-height: normal;
     }
 }
-
-
-@media (max-width:515px) {
-    .JI_reviews .JI_reviews_slider .JI_reviews_slider_card.next_card {
-        right: -100%;
-    }
-    
-    .JI_reviews .JI_reviews_slider .JI_reviews_slider_card.prev_card {
-        left: -100%;
-    }
-}
-

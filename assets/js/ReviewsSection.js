@@ -6,13 +6,14 @@ const myCards = document.querySelectorAll(".JI_reviews .JI_reviews_slider .JI_re
 
 let c = 0
 
-// let myInt = setInterval(() => {
-//     myCards[c].click();
-//     c++
-//     if (c > 2) {
-//         c = 0
-//     }
-// }, 5000);
+let myInt = setInterval(() => {
+    if (c > 2) {
+        c = 0
+    }
+    myCards[c].click();
+    c++
+   
+}, 3000);
 
 
 for (let i = 0; i < myCards.length; i++) {
@@ -65,6 +66,7 @@ let DifferArray = [];
 reviewSlider.addEventListener("touchstart" , (e) => {
     DifferArray = []
     prevPoint = e.touches[0].pageX;
+    clearInterval(myInt);
 
 })
 reviewSlider.addEventListener("touchmove" , (e) => {
@@ -84,11 +86,20 @@ reviewSlider.addEventListener("touchend" , () => {
     }
     else {
         c++ ;
+        console.log("counter after increase" , c) 
         if (c > 2) {
             c = 0 ;
         }
         myCards[c].click();
     }
+    myInt = setInterval(() => {
+        if (c > 2) {
+            c = 0
+        }
+        myCards[c].click();
+        c++
+       
+    }, 3000);
 })
 
 
