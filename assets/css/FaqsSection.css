@@ -1,0 +1,84 @@
+.JI_faq {
+    background-color: var(--white);
+}
+
+.JI_faq .JI_faq_container {
+    display: grid;
+    grid-template-columns: calc(50% - 7.6rem * 1/2) calc(50% - 7.6rem * 1/2);
+    column-gap: 7.6rem;
+}
+.JI_faq .JI_faq_container .JI_faq_card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 0 ;
+}
+.JI_faq .JI_faq_columns {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.JI_faq .JI_faq_container .JI_faq_card .JI_faq_card_head {
+    cursor: pointer;
+    color: var(--black);
+    font-size: 3.9rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;
+} 
+
+.JI_faq .JI_faq_container .JI_faq_card .JI_faq_card_head::after {
+    position: absolute;
+    content: "\25BE";
+    right: 0;
+    font-size: 3.9rem;
+    transition: all var(--main-delay) ease-in-out;
+}
+
+.JI_faq .JI_faq_container .JI_faq_card .JI_faq_card_head.active::after {
+    transform: rotate(180deg);
+}
+
+.JI_faq .JI_faq_container .JI_faq_card .JI_faq_card_desc {
+    max-height: 0;
+    overflow: hidden;
+    transition: all var(--main-delay) ease-in-out;
+}
+
+.JI_faq .JI_faq_container .JI_faq_card .JI_faq_card_desc_p {
+    color: var(--black);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 131%;
+    letter-spacing: -0.48px;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right , transparent ,  var(--black) , transparent) 1;
+} 
+
+
+@media (max-width : 992px) {
+    .JI_faq .JI_faq_container .JI_faq_card .JI_faq_card_head {
+        font-size: 1.6rem;
+    } 
+    .JI_faq .JI_faq_container .JI_faq_card .JI_faq_card_head::after {
+        font-size: 1.6rem;
+    }
+    .JI_faq .JI_faq_container .JI_faq_card {
+        font-size: 1rem;
+        line-height: normal;
+    }
+    .JI_faq .JI_faq_container .JI_faq_card .JI_faq_card_desc_p {
+        font-size: 1rem;
+    }
+
+}
+
+
+@media (max-width : 500px) {
+    .JI_faq .JI_faq_container {
+        grid-template-columns: 100%;
+        row-gap: 1.6rem;
+    }
+    .JI_faq .JI_faq_columns {
+        gap: 1.6rem;
+    }
+}
