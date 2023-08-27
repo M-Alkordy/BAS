@@ -103,3 +103,17 @@ reviewSlider.addEventListener("touchend" , () => {
 })
 
 
+
+reviewSlider.addEventListener("mouseenter" , () => {
+    clearInterval(myInt);
+})
+reviewSlider.addEventListener("mouseleave" , () => {
+     myInt = setInterval(() => {
+        if (c > 2) {
+            c = 0
+        }
+        myCards[c].click();
+        c++
+       
+    }, 3000);
+})
