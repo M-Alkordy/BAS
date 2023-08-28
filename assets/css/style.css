@@ -464,7 +464,7 @@
  /* start who-we-are && latest-project page */
  .FQ-latest-projects .FQ-slide .FQ-slider
   {
-    height: 38rem;
+    height: 42rem !important;
   }
   .FQ-Who-we .FQ-title-who-we-are .title
   {
@@ -475,6 +475,7 @@
   {
       font-size: 1.4rem;
       width: 90%;
+      
   }
   .FQ-Who-we .FQ-3cards
   {
@@ -496,8 +497,9 @@
 
   .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-card-desc
   {
-    padding: 3.5% 4% 4% 4% !important;
+    padding: 3.5% 4% 0% 4% !important;
     width: 100%;
+    height:39.5rem !important;
   }
   .slide-FQ.active 
   {
