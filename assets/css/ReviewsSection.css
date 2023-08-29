@@ -10,6 +10,7 @@
     overflow-x: clip;
     height: 450px;
     position: relative;
+    user-select: none;
 }
 
 
@@ -27,17 +28,19 @@
     transition: all calc(var(--main-delay)*2);
     position: absolute;
     cursor: pointer;
+    user-select: none;
 }
 .JI_reviews .JI_reviews_slider .JI_reviews_slider_card.active {
     transform: scale(1);
     opacity: 1;
+    pointer-events: none;
 }
 .JI_reviews .JI_reviews_slider .JI_reviews_slider_card.next_card {
     transform: scale(0.8) translateX(130%);
-    opacity: 0.3;
+    opacity: 0.2;
 }
 .JI_reviews .JI_reviews_slider .JI_reviews_slider_card.prev_card {
-    opacity: 0.3;
+    opacity: 0.2;
     transform: scale(0.8) translateX(-130%);
 }
 

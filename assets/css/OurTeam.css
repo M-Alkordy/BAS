@@ -24,6 +24,7 @@
     width: 100%;
     overflow : hidden;
     padding-bottom: 1rem;
+    user-select: none;
 }
 
 .JI_ourTeam .JI_ourTeam_slider {
