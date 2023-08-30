@@ -38,7 +38,8 @@ let positionDifferArray = [];
 ourTeamSlider.addEventListener("touchstart" , (e) => {
     positionDifferArray = []
     prevPageX = e.touches[0].pageX;
-
+    console.log("start touch")
+    clearInterval(myInterval);
 })
 ourTeamSlider.addEventListener("touchmove" , (e) => {
     positionDiffer = prevPageX - e.changedTouches[e.changedTouches.length-1].pageX;
@@ -56,6 +57,7 @@ const playOnTouch = (counter) => {
 }
 
 ourTeamSlider.addEventListener("touchend" , () => {
+    console.log("end touch")
     if (positionDifferArray[0] > positionDifferArray[positionDifferArray.length-1]) {
         counter -- ;
         playOnTouch(counter)
@@ -83,8 +85,8 @@ myIndeicatore.forEach((indicator,index) => {
         element.classList.remove("active")
     });
     e.target.classList.add("active");
-    clearInterval(myInterval);
-    myInterval = setInterval(autoPlay, 2000);
+    // clearInterval(myInterval);
+    // myInterval = setInterval(autoPlay, 2000);
 
     }
     

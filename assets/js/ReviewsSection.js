@@ -50,7 +50,6 @@ for (let i = 0; i < myCards.length; i++) {
 
 let prevPoint ;
 let Differ ;
-// let DifferArray = [];
 let DifferArray = [];
 
 
