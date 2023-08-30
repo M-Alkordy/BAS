@@ -26,6 +26,7 @@ let myInterval = setInterval(autoPlay, 2000);
 
 ourTeamSlider.addEventListener("mouseenter" , () => {
     clearInterval(myInterval);
+    console.log(":mouse enter")
 })
 ourTeamSlider.addEventListener("mouseleave" , () => {
     myInterval = setInterval(autoPlay, 2000);

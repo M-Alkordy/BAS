@@ -53,69 +53,104 @@ let Differ ;
 let DifferArray = [];
 
 
-const startDragging = () => {
+function startDragging () {
     clearInterval(myInt);
-    c--;
     if (c < 0) {
         c = 0;
     }
 }
 
-const dragging = (e) => {
+function dragging (e) {
     DifferArray = [];
-    prevPoint = e.pageX || e.touches[0].pageX; 
+    prevPoint = e.pageX || e.touches[0].pageX;  
+
 }
-const draggingMove = (e) => {
-    Differ = (e.pageX || e.touches[0].pageX) - prevPoint ;
+
+function draggingOnTouch (e) {
+    DifferArray = [];
+    prevPoint = e.touches[0].pageX;  
+    console.log("prevPoint" , prevPoint)
+    console.log("touccccccccccccccccccccccccccccccccccccch start")
+}
+
+function draggingMove (e) {
+    // Differ = prevPoint - (e.pageX || e.touches[e.touches.length-1].pageX);
+    Differ = prevPoint - (e.pageX || e.touches[0].pageX);
+    DifferArray.push(Differ);   
+}
+
+function draggingMoveOnTouch (e) {
+    Differ = prevPoint - e.touches[e.touches.length-1].pageX;
     DifferArray.push(Differ);   
 }
 
 const sliding = () => {
-    if (DifferArray[0] < DifferArray[DifferArray.length-1]) {
-        console.log("smaller")
-        c-- ;
-        console.log(c)
+    // console.log("DifferArray[0]" , DifferArray[0])
+    // console.log(" DifferArray[DifferArray.length-1]" ,  DifferArray[DifferArray.length-1])
+    if (DifferArray[0] > DifferArray[DifferArray.length-1]) {
+        console.log("bigger")
+        console.log("counter before " ,c )
+        // reviewSlider.click();
+        c--;
+        console.log("counter after " ,c )
+        // playSlider(c);
         if (c < 0) {
             c = 2
         }
         myCards[c].click();
-    }
-    else  if (DifferArray[0] > DifferArray[DifferArray.length-1]) {
-        console.log("bigger")
-        c++ ;
+    }  
+    else {
+        console.log("counter before " ,c )
+        // reviewSlider.click();
+        c++;
+        console.log("counter after " ,c )
+        console.log("smaller")
+        // playSlider(c);
         if (c > 2) {
             c = 0 ;
         }
         myCards[c].click();
+
     }
 }
 
-reviewSlider.addEventListener("mouseenter" , startDragging)
+reviewSlider.addEventListener("mouseenter" , () => {
+    console.log("mouse enter")
+    startDragging();
+})
+reviewSlider.addEventListener("mousedown" , (e) => {
+    dragging(e);
+    console.log("mouse down")
+})
 
-reviewSlider.addEventListener("mousedown" , dragging)
-reviewSlider.addEventListener("touchstart" , ()=> {
-    startDragging
-    dragging;
+reviewSlider.addEventListener("touchstart" , (e) => {
+    console.log("touch start")
+    startDragging();
+    dragging(e);
 })
 
 
-reviewSlider.addEventListener("mousemove" , draggingMove)
-reviewSlider.addEventListener("touchmove" , draggingMove)
+reviewSlider.addEventListener("mousemove" , (e) => {
+    draggingMove(e);
+})
 
+reviewSlider.addEventListener("touchmove" , (e) => {
+    draggingMove(e);
+})
 
-reviewSlider.addEventListener("mouseup", sliding );
-reviewSlider.addEventListener("touchend", sliding );
+reviewSlider.addEventListener("mouseup", sliding);
+reviewSlider.addEventListener("touchend", sliding);
 
 
 
 reviewSlider.addEventListener("mouseleave" , () => {
-    // console.log("mouse leave")
+    console.log("mouse leave")
      myInt = setInterval(() => {
          if (c > 2) {
              c = 0
             }
-        myCards[c].click();
-        c++
+            myCards[c].click();
+            c++
        
     }, 3000);
 })
