@@ -13,12 +13,11 @@ let myInt = setInterval(() => {
     myCards[c].click();
     c++
    
-}, 1000);
+}, 3000);
 
 
 for (let i = 0; i < myCards.length; i++) {
     myCards[i].addEventListener("click" , () => {
-        // console.log(`myCards${i} is click`)
         for (let j = 0; j < myCards.length; j++) {
             myCards.forEach(card => {
                 card.classList.remove("active");
@@ -53,6 +52,53 @@ let Differ ;
 let DifferArray = [];
 
 
+reviewSlider.addEventListener("mouseenter" , (e) => {
+    clearInterval(myInt);
+    c--;
+    console.log("counter before condition" , c)
+    if (c < 0) {
+        c = 0 ;
+    }
+    console.log("counter after condition" , c)
+})
+
+
+reviewSlider.addEventListener("mousedown" , (e) => {
+    DifferArray = [];
+    prevPoint = e.pageX;
+})
+
+reviewSlider.addEventListener("mousemove" , (e) => {
+    Differ = prevPoint - e.pageX;
+    DifferArray.push(Differ);   
+})
+
+reviewSlider.addEventListener("mouseup" , () => {
+    if (DifferArray[0] > DifferArray[DifferArray.length-1]) {
+        if (c==0) {
+            c=2 
+            myCards[c].click();
+        } else if (c==1) {
+            c=0
+            myCards[c].click();
+        } else if (c==2) {
+            c=1
+            myCards[c].click();
+        }
+    }
+    else {
+        if (c==0) {
+            c=1
+            myCards[c].click();
+        } else if (c==1) {
+            c=2
+            myCards[c].click();
+        } else if (c==2) {
+            c=0
+            myCards[c].click();
+        }
+    }
+})
 
 
 reviewSlider.addEventListener("touchstart" , (e) => {
@@ -63,71 +109,45 @@ reviewSlider.addEventListener("touchstart" , (e) => {
 })
 
 reviewSlider.addEventListener("touchmove" , (e) => {
-    // console.log("touchmove")
     Differ = prevPoint - e.changedTouches[e.changedTouches.length-1].pageX;
     DifferArray.push(Differ);   
 })
 
 reviewSlider.addEventListener("touchend" , () => {
-    console.log("toushed end")
     if (DifferArray[0] > DifferArray[DifferArray.length-1]) {
-        c-- ;
-        if (c < 0) {
-            c = 2
+        console.log("bigger")
+        if (c==0) {
+            c=2 
+            myCards[c].click();
+        } else if (c==1) {
+            c=0
+            myCards[c].click();
+        } else if (c==2) {
+            c=1
+            myCards[c].click();
         }
-        myCards[c].click();
     }
     else {
-        c++ ;
-        if (c > 2) {
-            c = 0 ;
+            console.log("smaller")
+        if (c==0) {
+            c=1
+            myCards[c].click();
+        } else if (c==1) {
+            c=2
+            myCards[c].click();
+        } else if (c==2) {
+            c=0
+            myCards[c].click();
         }
-        myCards[c].click();
     }
 
 })
 
 
 
-reviewSlider.addEventListener("mouseenter" , (e) => {
-    clearInterval(myInt);
-    console.log("mouse enter");
-})
-
-
-reviewSlider.addEventListener("mousedown" , (e) => {
-    console.log("mouse down")
-    DifferArray = [];
-    prevPoint = e.pageX;
-})
-
-reviewSlider.addEventListener("mousemove" , (e) => {
-    Differ = prevPoint - e.pageX;
-    DifferArray.push(Differ);   
-})
-
-reviewSlider.addEventListener("mouseup" , (e) => {
-    console.log("mouse up")
-    if (DifferArray[0] > DifferArray[DifferArray.length-1]) {
-        console.log("equal")
-        c-- ;
-        if (c < 0) {
-            c = 2
-        }
-        myCards[c].click();
-    }
-    else {
-        c++ ;
-        if (c > 2) {
-            c = 0 ;
-        }
-        myCards[c].click();
-    }
-})
 
 
 reviewSlider.addEventListener("mouseleave" , () => {
-    console.log("mouse leave")
      myInt = setInterval(() => {
          if (c > 2) {
              c = 0
@@ -135,5 +155,5 @@ reviewSlider.addEventListener("mouseleave" , () => {
         myCards[c].click();
         c++
        
-    }, 1000);
+    }, 3000);
 })
