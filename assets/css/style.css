@@ -7,10 +7,530 @@
 
 /* start home page */
 
+/* start who-we-are page */
+
+.FQ-Who-we .FQ-title-who-we-are 
+{
+    width: 90%;
+    margin: 100px auto;
+    text-align: center;
+}
+.FQ-Who-we .FQ-title-who-we-are .title
+{
+    font-size: 6.5rem;
+    margin: 0 auto 3rem auto ;
+    color: var(--Light-brown);
+    font-weight: var(--font-wx4);
+    font-family: var(--font-family);
+}
+.FQ-Who-we .FQ-title-who-we-are .desc
+{
+    width: 65%;
+    margin: 0 auto;
+    font-size: 3.1rem;
+    color: var(--Light-brown);
+    font-weight: var(--font-wx2);
+    font-family: var(--font-family);
+}
+.FQ-Who-we .FQ-3cards
+{
+    width: 54.1%;
+    margin: 0 auto;
+}
+.FQ-Who-we .FQ-3cards .cardes1
+{
+    width: 100%;
+    margin: 0 auto;
+    padding: 5.5rem;
+    position: relative;
+    /* background-color: yellow; */
+    margin-bottom: 3rem;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2),0px 4px 21px 6px rgba(0, 0, 0, 0.069);
+}
+.FQ-Who-we .FQ-3cards .cardes1 .FQ-top-left
+{
+    position: absolute;
+    top: 1rem;
+    left: 0.5rem;
+    font-size: 4.8rem;
+    color: var(--grey);
+}
+.FQ-Who-we .FQ-3cards .cardes1 .FQ-desc
+{
+    font-size: 3.1rem ;
+    color: var(--black);
+}
+/* end who-we-are page */
+
+/* start who-we-are page */
+
+.FQ-latest-projects
+{
+    margin-top: 100px;
+    font-family: var(--font-family);
+}
+
+.FQ-latest-projects .FQ-title-latest-projects 
+{
+    width: max-content;
+    margin: 70px auto;
+    text-align: center;
+
+}
+.FQ-latest-projects .FQ-title-latest-projects h1
+{
+    font-size: 6.5rem;
+}
+.FQ-latest-projects .FQ-title-latest-projects p
+{
+    font-size: 2.5rem;
+}
+
+
+.FQ-latest-projects .FQ-slide .FQ-slider 
+{
+    width: 100%;
+    height: 64.9rem;
+    position: relative !important;
+    overflow: hidden;
+  }
+  
+   .slide-FQ
+  {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    font-size: 5rem;
+    display: flex;
+  }
+  .slide-FQ.active 
+  {
+    opacity: 1;
+  }
+  .FQ-latest-projects
+  {
+    position: relative;
+  }
+  .FQ-latest-projects .FQ-slide 
+  {
+    width: 100%;
+    position: relative ;
+  }
+
+  .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-card-desc
+  {
+    padding: 3.5% 5% 12% 5% !important;
+    width: 56%;
+    height: max-content;
+    background-color: var(--black);
+    color: var(--white);
+    position: relative;
+  }
+  .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-card-desc .FQ-title-of 
+  {
+    margin-bottom: 7rem;
+  }
+  .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-card-desc .FQ-title-of h2
+  {
+    font-size: 5rem;
+    color: var(--black);
+    font-weight: var(--font-wx4);
+    position: relative;
+    z-index: 11;
+    margin-bottom: .3rem;
+  }
+  .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-card-desc .FQ-title-of span
+  {
+    font-size: 2rem;
+    position: relative;
+    color: var(--black);
+    font-weight: var(--font-wx2);
+    z-index: 11;
+  }
+  .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-card-desc p 
+  {
+    font-size: 2.5rem;
+    margin-top: 15%;
+    font-weight: var(--font-wx2);
+  }
+  .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-card-desc img
+  {
+    width: 95%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-img-descrip
+  {
+    width: 39.5rem ;
+    margin: auto ;
+  }
+  .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ  .FQ-card-desc .FQ-bottom-card-desc
+  {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 7rem;
+  }
+  .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ  .FQ-card-desc .FQ-bottom-card-desc h3
+  {
+      font-size: 2.5rem;
+      font-weight: var(--font-wx2);
+  }
+  .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ  .FQ-card-desc .FQ-bottom-card-desc div span
+  {
+      font-size: 2.5rem;
+      border-bottom: 1px solid var(--white);
+      font-weight: var(--font-wx2);
+      margin-top: 1rem;
+      padding-bottom: 1rem;
+      margin-right: .4rem;
+      cursor: pointer;
+  }
+
+
+  .FQ-buttons{
+    width: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    position: absolute;
+    bottom: 8% !important;
+    right: 19.6%;
+  }
+  
+  .btn 
+  {
+    background-color: gray;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    padding: .7rem;
+    border: none;
+    cursor: pointer;
+  }
+  .btn-activet
+  {
+    background-color: blue;
+      width: 1rem;
+      height: 1rem;
+      border: .61rem solid white;
+      outline: 2px solid blue ;
+  }
+    .FQ-bottom-card-desc img 
+    {
+    display: none;
+    }
+
+    /* end who-we-are page */
+
+
 /* end home page */
 
+
+@media  screen and (max-width:1680px){
+    .FQ-buttons{
+      right: 19.2%;
+    }
+  }
+
+
+@media screen and (max-width:1150px) {
+    /* start who-we-are && latest-project page */
+    .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-card-desc
+    {
+      padding: 3% 4% 0% 4%;
+      width: 60%;
+    }
+    .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-img-descrip
+    {
+      width: 33rem ;
+      margin: auto ;
+    }
+    .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-img-descrip img
+    {
+      width: 100%;
+    }
+    .FQ-buttons{
+      bottom: 12% !important;
+      right: 15.5%;
+    }
+    .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-card-desc .FQ-title-of h2
+    {
+      font-size: 4.4rem;
+      margin-bottom: .1rem;
+    }
+    .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-card-desc .FQ-title-of span
+    {
+      font-size: 1.8rem;
+    }
+    .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-card-desc p 
+    {
+      font-size: 2.5rem;
+    }
+    .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ  .FQ-card-desc .FQ-bottom-card-desc h3
+  {
+      font-size: 2.2rem;
+  }
+  .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ  .FQ-card-desc .FQ-bottom-card-desc div span
+  {
+      font-size: 2.2rem;
+  }
+    /* start who-we-are && latest-project page */
+}
 @media screen and (max-width:992px) {
     /* start home page */
 
+    /* start who-we-are && latest-project page */
+    .FQ-Who-we .FQ-title-who-we-are .title
+    {
+        font-size: 4.8rem;
+        width: 90%;
+    }
+    .FQ-Who-we .FQ-title-who-we-are .desc
+    {
+        font-size: 1.8rem;
+        width: 90%;
+    }
+    .FQ-Who-we .FQ-3cards
+    {
+        width: 88.3%;
+    }
+    .FQ-Who-we .FQ-3cards .cardes1
+    {
+        padding: 4rem;
+    }
+    .FQ-Who-we .FQ-3cards .cardes1 .FQ-top-left
+    {
+        color: var(--Dark-grey2);
+        font-size: 2.6rem;
+        top: 1.5rem;
+        left: 1rem;
+    }
+    .FQ-Who-we .FQ-3cards .cardes1 .FQ-desc
+    {
+        font-size: 1.6rem ;
+        color: var(--black);
+    }
+
+    /*  */
+
+    .FQ-latest-projects .FQ-slide .FQ-slider 
+  {
+    height: 42rem;
+  }
+
+    .FQ-latest-projects .FQ-title-latest-projects h1
+  {
+      font-size: 4.8rem;
+  }
+  .FQ-latest-projects .FQ-title-latest-projects p
+  {
+      font-size: 1.8rem;
+  }
+
+    .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-card-desc
+    {
+      padding: 3% 4% 4% 4% !important;
+      width: 64%;
+    }
+    .slide-FQ.active 
+    {
+      width: 100%;
+      height: 22rem !important;
+    }
+    .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-img-descrip
+    {
+      width: 24rem ;
+      margin: 10% auto;
+    }
+    .FQ-buttons{
+      bottom: 5% !important;
+      right: 13.5%;
+    }
+    .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-card-desc .FQ-title-of h2
+    {
+      font-size: 3.5rem;
+      margin-bottom: .1rem;
+    }
+    .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-card-desc .FQ-title-of span
+    {
+      font-size: 1.6rem;
+    }
+    .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-card-desc p 
+    {
+      font-size: 1.6rem;
+    }
+    .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ  .FQ-card-desc .FQ-bottom-card-desc h3
+  {
+      font-size: 1.8rem;
+  }
+  .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ  .FQ-card-desc .FQ-bottom-card-desc div span
+  {
+      font-size: 1.8rem;
+  }
+
+    /* start who-we-are && latest-project page */
+
     /* end home page */
+}
+
+@media (max-width:710px){
+ /* start who-we-are && latest-project page */
+
+    .FQ-latest-projects .FQ-slide .FQ-slider 
+  {
+    width: 100%;
+    height: 42rem;
+    position: relative !important;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  .slide-FQ.active 
+  {
+    width: 100%;
+    height: 42rem;
+  }
+    .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ
+    {
+      width: 100%;
+    }
+    .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-card-desc
+    {
+      padding: 6% 4% 4% 4% !important;
+      width: 100% !important;
+    }
+    .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-img-descrip
+    {
+      width: 0rem ;
+    }
+    .FQ-buttons{
+      bottom: 35% !important;
+      right: 13.5%;
+    }
+    .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-card-desc .FQ-title-of h2
+    {
+      font-size: 2.2rem;
+      margin-bottom: 0rem !important;
+      margin-top: 1rem;
+    }
+    .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-card-desc .FQ-title-of span
+    {
+      font-size: 1.2rem;
+    }
+    .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-card-desc p 
+    {
+      font-size: 1.6rem;
+    }
+    .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ  .FQ-card-desc .FQ-bottom-card-desc h3
+  {
+      font-size: 1.8rem;
+      margin-left: 4rem;
+      padding: 3PX;
+  }
+  .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ  .FQ-card-desc .FQ-bottom-card-desc div span
+  {
+      font-size: 1.8rem;
+      
+  }
+  .btn 
+  {
+    display: none;
+  }
+  .FQ-bottom-card-desc .showimg 
+  {
+    width: 3rem !important;
+    display: block;
+    margin-right: 4rem !important;
+  }
+  .flex-img-fq
+  {
+    position: relative;
+    display: flex !important;
+    width: 70% ;
+    justify-content: space-between !important;
+  }
+   /* end who-we-are && latest-project page */
+}
+
+@media (max-width:440px){
+ /* start who-we-are && latest-project page */
+ .FQ-latest-projects .FQ-slide .FQ-slider
+  {
+    height: 42rem !important;
+  }
+  .FQ-Who-we .FQ-title-who-we-are .title
+  {
+      font-size: 2rem;
+      width: 90%;
+  }
+  .FQ-Who-we .FQ-title-who-we-are .desc
+  {
+      font-size: 1.4rem;
+      width: 90%;
+      
+  }
+  .FQ-Who-we .FQ-3cards
+  {
+      width: 88.3%;
+  }
+  .FQ-Who-we .FQ-3cards .cardes1 .FQ-top-left
+  {
+      color: var(--Dark-grey2);
+  }
+
+  .FQ-latest-projects .FQ-title-latest-projects h1
+  {
+      font-size: 2rem;
+  }
+  .FQ-latest-projects .FQ-title-latest-projects p
+  {
+      font-size: 1.4rem;
+  }
+
+  .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-card-desc
+  {
+    padding: 3.5% 4% 0% 4% !important;
+    width: 100%;
+    height:39.5rem !important;
+  }
+  .slide-FQ.active 
+  {
+    width: 100%;
+    height: 30rem !important;
+  }
+  .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-card-desc .FQ-title-of h2
+  {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-card-desc .FQ-title-of span
+  {
+    font-size: 1.2rem;
+  }
+  .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ .FQ-card-desc p 
+  {
+    font-size: 1.4rem;
+    margin-top: 0px !important;
+  }
+  .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ  .FQ-card-desc .FQ-bottom-card-desc h3
+  {
+    font-size: 1.6rem;
+  }
+  .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ  .FQ-card-desc .FQ-bottom-card-desc div 
+  {
+    width: max-content;
+  }
+  .FQ-latest-projects .FQ-slide .FQ-slider .slide-FQ  .FQ-card-desc .FQ-bottom-card-desc div span
+  {
+    font-size: 1.4rem;
+  }
+ /* end who-we-are && latest-project page */
 }

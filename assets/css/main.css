@@ -1,0 +1,29 @@
+:root {
+    --black : #1C1B1F;
+    --Dark-grey : #383838;
+    --Dark-grey2 : #383838b8;
+    --Primaray : #2A1BB8;
+    --white : #DDDBFE;
+    --grey : #D2D2D2;
+    --Light-grey : #A7A7A7;
+    --Light-brown : #a52a2a;
+
+
+    --font-wx1   : 300;
+    --font-wx2   : 400;
+    --font-wx3   : 500;
+    --font-wx4   : 600;
+    --font-wx5   : 700;
+    --font-wx6   : 800;
+
+    --font-family: 'Monster';
+    --font-family-2: 'Sans-serif';
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
