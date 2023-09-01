@@ -1,0 +1,50 @@
+.JI_caseStudy_hero {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--black);
+    position: relative;
+} 
+.JI_caseStudy_hero .JI_caseStudy_hero_intro {
+    width: 60.4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+}
+.JI_caseStudy_hero .JI_caseStudy_hero_h1 {
+    color: var(--white);
+    font-size: 6.1rem;
+    font-weight: 800;
+}
+
+.JI_caseStudy_hero .JI_caseStudy_hero_p {
+    color: var(--white3);
+    text-align: center;
+    font-size: 3.1rem;
+    font-weight: 400;
+    line-height: 120%;
+}
+.JI_caseStudy_hero .JI_caseStudy_hero_img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 12.9%;
+    min-width: 11.1rem;
+}
+
+@media(max-width : 992px) {
+    .JI_caseStudy_hero .JI_caseStudy_hero_intro{
+        gap: 1.6rem;
+        width: 88.9%;
+    } 
+    .JI_caseStudy_hero .JI_caseStudy_hero_h1 {
+        font-size: 2.4rem;
+    }    
+    .JI_caseStudy_hero .JI_caseStudy_hero_p {
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: normal;
+    }
+}

@@ -1,0 +1,136 @@
+.JI_reviews .JI_main_title_h1::after {
+    content: "+ 33 more";
+}
+
+
+.JI_reviews .JI_reviews_slider {
+    display: flex;
+    justify-content: center;
+    /* gap: 8.8rem; */
+    overflow-x: clip;
+    height: 450px;
+    position: relative;
+    user-select: none;
+}
+
+
+.JI_reviews .JI_reviews_slider .JI_reviews_slider_card {
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15), 0px 4px 25px 3px rgba(0, 0, 0, 0.10);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 55%;
+    min-width: 290px;
+    gap: 3.2rem;
+    padding: 3.8rem 0 0;
+    flex-shrink: 0;
+    transition: all calc(var(--main-delay)*2);
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+}
+.JI_reviews .JI_reviews_slider .JI_reviews_slider_card.active {
+    transform: scale(1);
+    opacity: 1;
+    pointer-events: none;
+}
+.JI_reviews .JI_reviews_slider .JI_reviews_slider_card.next_card {
+    transform: scale(0.8) translateX(130%);
+    opacity: 0.2;
+}
+.JI_reviews .JI_reviews_slider .JI_reviews_slider_card.prev_card {
+    opacity: 0.2;
+    transform: scale(0.8) translateX(-130%);
+}
+
+.JI_reviews .JI_reviews_slider .JI_reviews_slider_card_head_info {
+    padding: 0.5rem 10rem 0.5rem 7rem;
+    background-color: var(--black);
+    position: relative;
+}
+.JI_reviews .JI_reviews_slider .JI_reviews_slider_card_head_info::after {
+    position: absolute;
+    content: "";
+    clip-path: polygon(100% 0, 100% 38px, 0 100%, 0 0);
+    background-color: var(--black);
+    right: -49px;
+    top: -38px;
+    width: 50px;
+    height: calc(100% + 38px);
+}
+.JI_reviews .JI_reviews_slider .JI_reviews_slider_card_head_info .JI_reviews_slider_card_head_h1 {
+    color: var(--white);
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3.4rem;
+}
+
+
+.JI_reviews .JI_reviews_slider .JI_reviews_slider_card_head_info .JI_reviews_slider_card_head_p {
+    color: var(--indicators-color);
+    font-size: 1.3rem;
+    line-height: 141.4%;
+}
+
+.JI_reviews .JI_reviews_slider .JI_reviews_slider_card_body {
+    padding: 0 7rem;
+}
+
+
+
+.JI_reviews .JI_reviews_slider .JI_reviews_slider_card_body .JI_reviews_slider_card_body_p {
+    color: var(--black);
+    font-size: 2.5rem;
+    line-height: 3.4rem;
+}
+
+.JI_reviews .JI_reviews_slider .JI_reviews_slider_card_body .JI_reviews_slider_card_body_img {
+    width: 35%;
+    min-width: 3.6rem;
+    max-width: 15rem;
+}
+
+@media (max-width:992px) {
+    .JI_reviews .JI_reviews_slider {
+        height: 250px;
+    }
+    
+    .JI_reviews .JI_reviews_slider .JI_reviews_slider_card {
+        padding: 1.4rem 0 0;
+        gap: 1.2rem;
+    }
+
+    .JI_reviews .JI_reviews_slider .JI_reviews_slider_card_head_info {
+        padding: .5rem 5rem .5rem 2.7rem;
+    }
+
+    .JI_reviews .JI_reviews_slider .JI_reviews_slider_card_head_info::after {
+        right: -3.9rem;
+        top: -14px;
+        clip-path: polygon(100% 0, 100% 14px, 0 100%, 0 0);
+        width: 4rem;
+        height: calc(100% + 1.4rem);
+    }
+
+    .JI_reviews .JI_reviews_slider .JI_reviews_slider_card_head_info .JI_reviews_slider_card_head_h1 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: normal;
+    }
+    
+    .JI_reviews .JI_reviews_slider .JI_reviews_slider_card_head_info .JI_reviews_slider_card_head_p {
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: normal;
+    }
+    
+    .JI_reviews .JI_reviews_slider .JI_reviews_slider_card_body {
+        padding: 0 2.7rem;
+    }
+    
+    .JI_reviews .JI_reviews_slider .JI_reviews_slider_card_body .JI_reviews_slider_card_body_p {
+        font-size: 1.4rem;
+        line-height: normal;
+    }
+}

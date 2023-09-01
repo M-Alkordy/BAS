@@ -1,0 +1,134 @@
+.JI_ourTeam {
+    margin-top: 8rem;
+    margin-bottom: -8%;
+    position: relative;
+
+}
+
+.JI_ourTeam .JI_main_title {
+    padding: 4% 0 16.7%;
+    background-color: var(--black);
+    margin: 0;
+
+}
+
+.JI_ourTeam .JI_main_title_h1 {
+    color: var(--white);
+}
+
+.JI_ourTeam .JI_ourteam_slider_container {
+    transform: translateY(-30%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow : hidden;
+    padding-bottom: 1rem;
+    user-select: none;
+}
+
+.JI_ourTeam .JI_ourTeam_slider {
+    display: flex;
+    gap: var(--gap) ;
+    align-items: center;
+    transition: all calc(var(--main-delay)*2);
+    position: relative;    
+    width: 90%;
+}
+
+.JI_ourTeam .JI_ourTeam_slider_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 1rem;
+    min-width: 33.6rem;
+}
+
+.JI_ourTeam .JI_ourTeam_slider_card .JI_ourTeam_slider_card_img {
+    width: 100%;
+}
+
+.JI_ourTeam .JI_ourTeam_slider_card .JI_ourTeam_slider_card_info_name {
+    color: var(--black);
+    font-size: 3.9rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.JI_ourTeam .JI_ourTeam_slider_card .JI_ourTeam_slider_card_info_job {
+    color: var(--black);
+    text-transform: capitalize;
+    font-size: 2rem;
+    width: max-content;
+}
+
+.JI_ourTeam .JI_ourTeam_slider_indicators {
+    display: flex;
+    gap: 1.8rem;
+    margin-top: 3.9rem;
+    justify-content: center;
+    align-items: center;
+}
+.JI_ourTeam .JI_ourTeam_slider_indicators .JI_ourTeam_slider_indicators_span {
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    background-color: var(--indicators-color);
+    cursor: pointer;
+    position: relative;
+}
+.JI_ourTeam .JI_ourTeam_slider_indicators .JI_ourTeam_slider_indicators_span.active {
+    background-color: var(--primary);
+}
+.JI_ourTeam .JI_ourTeam_slider_indicators .JI_ourTeam_slider_indicators_span.active:after {
+    position: absolute;
+    content: "";
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@media(max-width:992px) {
+    .JI_ourTeam {
+        margin-top: 8.4rem;
+    }
+    .JI_ourTeam .JI_ourTeam_slider_card {
+        gap: .608rem;
+        width: 40%;
+        min-width: 15.1rem;
+    }
+
+    .JI_ourTeam .JI_ourTeam_slider_card .JI_ourTeam_slider_card_info_name {
+        font-size: 1.6rem;
+    }
+    
+    .JI_ourTeam .JI_ourTeam_slider_card .JI_ourTeam_slider_card_info_job {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    .JI_ourTeam .JI_ourTeam_slider_indicators {
+        gap: .842rem;
+        margin-top: 1.446rem;
+    }
+    .JI_ourTeam .JI_ourTeam_slider_indicators .JI_ourTeam_slider_indicators_span {
+        width: .608rem;
+        height: .608rem;
+    }
+    .JI_ourTeam .JI_ourTeam_slider_indicators .JI_ourTeam_slider_indicators_span.active:after {
+        width: 1.216rem;
+        height: 1.216rem;
+    }
+}
+
+@media(max-width:550px)  {
+    .JI_ourTeam .JI_main_title {
+        padding: 2.338rem 0 10.241rem;
+    }
+}

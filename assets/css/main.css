@@ -1,0 +1,95 @@
+
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap');
+
+:root {
+  --black : #1C1B1F;
+  --dark-black : #1C1B1F;
+  --dark-grey :  #383838;
+  --primary  : #2A1BB8 ;
+  --white : #FFFBFE;
+  --white2 : #F4F4F4;
+  --white3 : #FDFDFD;
+  --light-grey : #A7A7A7;
+  --main-delay : .5s;
+  --indicators-color : #d2d2d2;
+
+  --width : 33.2rem;
+  --gap: 9.2240117%;
+
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+  }
+  
+  body {
+    background-color: #FFFBFE;
+    scroll-behavior: smooth;
+  }
+ul {
+  list-style: none;
+}
+
+
+
+  .JI_container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+.JI_main_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8rem;
+  margin-bottom: 6.8rem;
+  text-transform: capitalize
+}
+.JI_main_title .JI_main_title_h1 {
+  color: var(--black);
+  font-size: 6.1rem;
+  font-weight: 800;
+  position: relative;
+}
+.JI_main_title .JI_main_title_h1::after {
+  position: absolute;
+  color: var(--primary);
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  width: max-content;
+}
+.JI_main_title .JI_main_title_p {
+  color: var(--dark-grey);
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3.4rem;
+  text-align: center;
+}
+
+@media (max-width : 992px) {
+  :root {
+    --width : 14.18rem;
+    --gap : 8.3%; 
+  }
+  .JI_main_title {
+    margin-bottom: 2.4rem;
+  }
+  .JI_main_title .JI_main_title_h1 {
+    font-size: 2.4rem;
+  }
+  .JI_main_title .JI_main_title_h1::after {
+    font-size: 0.8rem;
+  }
+  .JI_main_title .JI_main_title_p {
+    color: var(--dark-grey);
+    font-size: 1.2rem;
+    line-height: normal;
+  }
+}
