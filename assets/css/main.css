@@ -9,6 +9,7 @@
   --primary  : #2A1BB8 ;
   --white : #FFFBFE;
   --white2 : #F4F4F4;
+  --white3 : #FDFDFD;
   --light-grey : #A7A7A7;
   --main-delay : .5s;
   --indicators-color : #d2d2d2;
@@ -31,7 +32,9 @@
     background-color: #FFFBFE;
     scroll-behavior: smooth;
   }
-
+ul {
+  list-style: none;
+}
 
 
 

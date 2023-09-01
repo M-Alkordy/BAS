@@ -17,6 +17,9 @@
 .JI_Partners .JI_Partners_slider:not(:last-child) {
     margin-bottom: 5.1rem;
 }
+.JI_Partners.JI_Customers .JI_Partners_slider:not(:last-child) {
+    margin-bottom: 3.2rem;
+}
 .JI_Partners .JI_Partners_slider:hover {
     animation-play-state: paused;
 }
@@ -36,6 +39,9 @@
     }
     .JI_Partners .JI_Partners_slider:not(:last-child) {
         margin-bottom: 3.07rem;
+    }
+    .JI_Partners.JI_Customers .JI_Partners_slider:not(:last-child) {
+        margin-bottom: 2.178rem;
     }
     .JI_Partners .JI_Partners_slider .JI_Partners_slider_img {
         height: 4.1rem;
